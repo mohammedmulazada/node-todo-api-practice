@@ -1,10 +1,7 @@
-const mongoose = require('mongoose')
+var mongoose = require('mongoose')
 
-//mongoose schema
 var Todo = mongoose.model('Todo', {
-	//name 
 	text: {
-		//accepted type
 		type: String,
 		required: true,
 		minlength: 1,
